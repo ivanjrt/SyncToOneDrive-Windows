@@ -10,7 +10,17 @@ Choose the option for "What to do Accordingly", for my case, I'm repliacating my
 Give it a name, this will be needed for the automation process<br/><br/>
 
 Once All the Tasks ("Pairing") has been finished<br/>
-
-
+  * Sync Up to make sure everything works <br/>
+  * Create a Batch script with this content:
+  ```
+  @echo off
+  "C:\Program Files\SyncToy 2.1\SyncToyCmd.exe" -r FolderPairName
+  exit
+  ```
+  * Test the script by itself
+  * Create a Task Scchedule pointing at the Bat script, to run as often as your want!
+  
+  Voila!
 
 # SyncToNAs-OneDrive
+WIP
